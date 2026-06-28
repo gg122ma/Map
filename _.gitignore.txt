@@ -1,0 +1,30 @@
+# ============================================================
+# 文件：.gitignore
+# 职责：告诉 Git 哪些文件/文件夹不需要上传到 GitHub
+# ============================================================
+
+# 依赖包（体积很大，GitHub 上用 npm install 重新生成）
+node_modules/
+
+# 打包输出（由 GitHub Actions 自动生成，不需要手动上传）
+dist/
+
+# 本地环境变量（包含密钥等敏感信息，不能上传）
+.env
+.env.local
+.env.production
+
+# 编辑器配置（每个人不同，不需要共享）
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# TypeScript 编译缓存
+*.tsbuildinfo
